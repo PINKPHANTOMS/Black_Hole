@@ -15,9 +15,9 @@ let sight = true
 
 function preload() {
   stock = loadImage('star.jpg');
-  vid1 = createVideo('gif2.mov')
-  vid2 = createVideo('gif4.mov')
-  vid = createVideo('gif4.mov')
+  vid1 = createVideo('gif2.mp4')
+  vid2 = createVideo('gif4.mp4')
+  vid = createVideo('gif4.mp4')
   black = loadImage('black.jpg')
 }
 
