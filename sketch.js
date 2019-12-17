@@ -23,6 +23,11 @@ function preload() {
 
 function setup() {
 
+  vid.play();
+  vid1.play();
+  vid2.play();
+  
+
 
   mic = new p5.AudioIn();
   mic.start();
