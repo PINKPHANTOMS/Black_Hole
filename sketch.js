@@ -22,10 +22,6 @@ function preload() {
 }
 
 function setup() {
-
-  vid.play();
-  vid1.play();
-  vid2.play();
   
 
 
@@ -42,9 +38,10 @@ function setup() {
 
     vid1.loop()
     vid2.loop()
-
-
     vid.loop()
+      vid.play();
+  vid1.play();
+  vid2.play();
 
     createCanvas(1600, 1000, WEBGL)
 
