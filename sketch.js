@@ -72,13 +72,7 @@ function draw() {
 
   var vol = mic.getLevel();
 
-  if(play == false){
-  vid1.play();
-  vid2.play();
-              vid.play();
-play = true;
 
-  }
 
 
 
@@ -156,7 +150,7 @@ play = true;
     let photonsphere = rsphere*3/2
 
 
-    texture(vid2)
+    texture(stock)
     // shearX(millis()/10000)
     // shearY(millis()/1000)
     // rotateZ(millis()/(vol*1000))
@@ -168,7 +162,7 @@ play = true;
       translate(0,0,-350)
 
       noStroke()
-      texture(vid2)
+      texture(stock)
 
       ellipsoid(800, 800, stretch, 24, 24)
 
@@ -185,7 +179,16 @@ play = true;
 
 
 
+function mouseClicked() {
+  if(play == false){
+  vid1.play();
+  vid2.play();
+              vid.play();
+play = true;
 
+  }
+
+}
 
 
 
