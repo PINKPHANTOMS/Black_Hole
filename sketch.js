@@ -13,6 +13,8 @@ var mic
 let fft
 let sight = true
 
+let play = false
+
 function preload() {
   stock = loadImage('star.jpg');
   vid1 = createVideo('gif2.mp4')
@@ -39,9 +41,6 @@ function setup() {
     vid1.loop()
     vid2.loop()
     vid.loop()
-      vid.play();
-  vid1.play();
-  vid2.play();
 
     createCanvas(1600, 1000, WEBGL)
 
@@ -73,11 +72,20 @@ function draw() {
 
   var vol = mic.getLevel();
 
+  if(play == false){
+  vid1.play();
+  vid2.play();
+              vid.play();
+play = true;
+
+  }
+
 
 
  let positions = tracker.getCurrentPosition()
 
     if (positions.length > 0) {
+
 
         stroke(255)
         fill(255)
@@ -163,6 +171,8 @@ function draw() {
       texture(vid2)
 
       ellipsoid(800, 800, stretch, 24, 24)
+
+
 
     }else{
 
