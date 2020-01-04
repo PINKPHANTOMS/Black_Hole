@@ -75,7 +75,6 @@ function draw() {
 
 
 
-
  let positions = tracker.getCurrentPosition()
 
     if (positions.length > 0) {
@@ -106,9 +105,9 @@ function draw() {
 
 
         // push()
-        // fill(255, 0, 0)
-        // ellipse(leftEyeX, leftEyeY, 20, 20)
-        // ellipse(rightEyeX, rightEyeY, 20, 20)
+        fill(255, 0, 0)
+        ellipse(leftEyeX, leftEyeY, 20, 20)
+        ellipse(rightEyeX, rightEyeY, 20, 20)
         // pop() 
 
 
@@ -150,7 +149,7 @@ function draw() {
     let photonsphere = rsphere*3/2
 
 
-    texture(stock)
+    texture(vid2)
     // shearX(millis()/10000)
     // shearY(millis()/1000)
     // rotateZ(millis()/(vol*1000))
@@ -162,7 +161,7 @@ function draw() {
       translate(0,0,-350)
 
       noStroke()
-      texture(stock)
+      texture(vid2)
 
       ellipsoid(800, 800, stretch, 24, 24)
 
